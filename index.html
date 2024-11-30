@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Check</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tech Check Check</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <button class="nav-item" onclick="goHome()">Home</button>
+        <button class="nav-item" onclick="openSearch()">Search</button>
+        <button class="nav-item" onclick="signUp()">Sign Up</button>
+        <!-- Add more nav items here as needed -->
+    </nav>
+
+    <p>This is a simple button to show the connection to our MySQL database using JDBC.</p>
+    <button onclick="fetchData()">Fetch Data from Java Backend</button>
+
+    <p id="response"></p>
+    <section>
+        
+    </section>
+    
+    <!-- Search Pop-up -->
+    <div id="searchPopup" class="search-popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeSearch()">&times;</span>
+            <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+            <button class="search-btn" onclick="submitSearch()">Search</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

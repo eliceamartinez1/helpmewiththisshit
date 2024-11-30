@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Search Results</h1>
+    </header>
+    <nav class="navbar">
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search Product" onkeyup="key_up()" />
+            <button id="searchBtn" onclick="submitSearch()">Search</button>
+        </div>
+
+        <button class="nav-item" onclick="goHome()">Home</button>
+        <button class="nav-item" onclick="openSearch()">Search</button>
+        <button class="nav-item" onclick="signUp()">Sign Up</button>
+        <!-- Add more nav items here as needed -->
+    </nav>
+    <!-- Search Results Section -->
+    <section class="search-results" id="searchResults">
+        <!--Search results fill here-->
+    </section>
+    <div id="searchPopup" class="search-popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeSearch()">&times;</span>
+            <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+            <button class="search-btn" onclick="submitSearch()">Search</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
